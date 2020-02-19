@@ -1,0 +1,43 @@
+{
+  "name": "easy-express-kerberos",
+  "version": "1.0.0",
+  "description": "Express middleware for kerberos authentication",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "lint": "eslint src/index.js",
+    "babel": "babel src/index.js -d dist",
+    "build": "npm run lint && rimraf dist && npm run babel",
+    "test": "echo \"no test specified\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gunjit3/easy-express-kerberos.git"
+  },
+  "keywords": [
+    "kerberos",
+    "express",
+    "middleware"
+  ],
+  "author": {
+    "name": "Gunjit Mishra",
+    "email": "gunjit3788@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gunjit3/easy-express-kerberos/issues"
+  },
+  "homepage": "https://github.com/gunjit3/easy-express-kerberos#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "eslint": "^6.8.0",
+    "rimraf": "^3.0.1"
+  },
+  "dependencies": {
+    "composable-middleware": "^0.3.0",
+    "easy-kerberos": "1.1.0",
+    "express-auth-negotiate": "^0.2.0"
+  }
+}
